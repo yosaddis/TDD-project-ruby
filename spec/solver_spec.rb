@@ -21,5 +21,20 @@ describe Solver do
       expect(solver.factorial(10)).to eq(3_628_800)
     end
   end
+
+  describe 'Reverse String' do
+    it 'should return "olleh" if the string is "hello"' do
+      expect(solver.reverse_string('hello')).to eq('olleh')
+    end
+
+    it 'should return "dlrow" if the string is "world"' do
+      expect(solver.reverse_string('world')).to eq('dlrow')
+    end
+
+    it 'should return "gnirts" if the string is "string"' do
+      expect(solver.reverse_string('string')).to eq('gnirts')
+    end
+  end
+
 end
 
