@@ -36,5 +36,23 @@ describe Solver do
     end
   end
 
+  describe 'FizzBuzz' do
+    it 'should return "Fizz" if the number is divisible by 3' do
+      expect(solver.fizzbuzz(3)).to eq('Fizz')
+    end
+
+    it 'should return "Buzz" if the number is divisible by 5' do
+      expect(solver.fizzbuzz(5)).to eq('Buzz')
+    end
+
+    it 'should return "FizzBuzz" if the number is divisible by 3 and 5' do
+      expect(solver.fizzbuzz(15)).to eq('FizzBuzz')
+    end
+    
+    it 'should return the number if the number is not divisible by 3 or 5' do
+      expect(solver.fizzbuzz(7)).to eq(7)
+    end
+  end
+
 end
 
