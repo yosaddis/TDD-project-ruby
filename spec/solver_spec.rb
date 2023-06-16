@@ -20,6 +20,10 @@ describe Solver do
     it 'should return 3628800 if the number is 10' do
       expect(solver.factorial(10)).to eq(3_628_800)
     end
+    it 'should raise an error if the number is negative' do
+      num = -5
+      expect { solver.factorial(num) }.to raise_error(ArgumentError)
+    end
   end
 
   describe 'Reverse String' do
