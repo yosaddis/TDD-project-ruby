@@ -48,11 +48,9 @@ describe Solver do
     it 'should return "FizzBuzz" if the number is divisible by 3 and 5' do
       expect(solver.fizzbuzz(15)).to eq('FizzBuzz')
     end
-    
+
     it 'should return the number if the number is not divisible by 3 or 5' do
       expect(solver.fizzbuzz(7)).to eq(7)
     end
   end
-
 end
-

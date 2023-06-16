@@ -22,5 +22,4 @@ class Solver
       num
     end
   end
-
 end
